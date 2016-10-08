@@ -1,0 +1,45 @@
+// sources
+@import 'src/_bootstrap.scss'; // bootstrap
+@import 'src/_fonts.scss'; // fonts
+@import 'src/_wordpress.scss'; // wp classes
+@import 'src/_jquery.fancybox.scss'; // fancybox
+@import 'src/_slick.scss'; // slick slider
+// modules
+
+// utilites
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-width: 1200px;
+}
+.container{
+	min-width: 1200px;
+}
+
+// buttons
+.btn{
+	transition: all .3s;
+}
+.btn-transparent{
+	border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	&:hover{
+		color: #fff;
+		border: 2px solid #fff;
+		background: $brand-primary;
+	}
+}
+.btn-primary{
+	border: none;
+	background: $brand-primary;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	color: #fff;
+	&:hover{
+		color: #fff;
+		background: darken($brand-primary,10%);
+	}
+}
