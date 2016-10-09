@@ -16,6 +16,7 @@
 				&:hover,
 				&.current-menu-item{
 					a{
+						color: $brand-primary;
 						&:after{
 							width: 100%;
 							left: 0;
@@ -31,6 +32,7 @@
 					text-transform: uppercase;
 					text-decoration: none;
 					position: relative;
+					transition: all .3s;
 					&:after{
 						content: '';
 						position: absolute;
@@ -479,6 +481,74 @@
 				background-color: #d1050c;
 				background-image: url(../img/chester-h.png);
 				color: #fff;
+			}
+		}
+	}
+}
+
+// reviews
+.reviews-page{
+	margin-top: 75px;
+	margin-bottom: 75px;
+	.review-block{
+		background: none;
+		box-shadow: none;
+		margin-bottom: 30px;
+		.title{
+			color: $brand-primary;
+		}
+	}
+}
+.purple-block{
+	background-color: $brand-primary;
+	background-image: url(../img/bg2.jpg);
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 0;
+	color: #fff;
+	.description{
+		font-size: 15px;
+		line-height: 20px;
+		padding-bottom: 60px;
+		.title{
+			font-size: 40px;
+			font-weight: 300;
+			margin-top: 15px;
+			margin-bottom: 40px;
+		}
+	}
+}
+// purple menu
+.purple-menu-container{
+	.purple-menu{
+		text-align: right;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+		li{
+			display: inline-block;
+			margin-left: 20px;
+			&.current-menu-item,
+			&:hover{
+				a{
+					color: $brand-primary;
+					background-color: #fff;
+				}
+			}
+			a{
+				font-size: 15px;
+				line-height: 15px;
+				font-weight: 400;
+				border: 2px solid #fff;
+				border-radius: 4px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				display: inline-block;
+				padding: 8px 15px;
+				transition: all .3s;
 			}
 		}
 	}

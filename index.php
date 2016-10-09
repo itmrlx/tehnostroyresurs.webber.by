@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="img/favicon-160.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon-114.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72.png">
-	<link rel="apple-touch-icon-precomposed" href="img/favicon-57.png">
-	<title>Техностройресурс Плюс</title>
-	<link rel="stylesheet" href="css/global.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-	<!-- header -->
-	<div class="container header-top">
-		<div class="row">
-			<div class="col-xs-3 logo-container">
-				<a href="/"><img src="img/logo.png" alt="Техностройресурс Плюс"></a>
-			</div>
-			<div class="col-xs-7 menu-container">
-				<ul class="pro-menu">
-					<li><a href="#">О КОМПАНИИ</a></li>
-					<li><a href="#">УСЛУГИ</a></li>
-					<li><a href="#">ПОРТФОЛИО</a></li>
-					<li><a href="#">НОВОСТИ</a></li>
-					<li><a href="#">КОНТАКТЫ</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-2 phone-container">
-				<a href="tel:+375290000000">+375 29 <span>000-00-00</span></a>
-			</div>
-		</div>
-	</div>
+<?php include 'header.php'; ?>
 
 	<!-- main slider -->
 	<div class="wrapper main-slider">
@@ -173,38 +138,4 @@
 		</div>
 	</div>
 
-	<!-- footer -->
-	<div class="wrapper footer-b">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3 socials">
-					<a href="/" class="logo">техстройресурс плюс</a>
-					<div class="clearfix"></div>
-					<a href="#" class="soc vk"></a>
-					<a href="#" class="soc fb"></a>
-					<a href="#" class="soc in"></a>
-					<a href="#" class="soc yt"></a>
-				</div>
-				<div class="col-xs-4 desc">
-					<p>Строительсво и отделка объектов под ключ: офисы, административные здания, жилье, производственные помещения.</p>
-					<p>© ООО «Техстройресурс Плюс»</p>
-				</div>
-				<div class="col-xs-3 contacts">
-					<a href="tel:+375290000000">+37529 000-00-00</a>
-					<a href="tel:+375290000000">+37529 000-00-00</a>
-					<a href="mailto:tsrplus@tut.by">tsrplus@tut.by</a>
-					<p>г. Минск,  ул. Лобанка, 79</p>
-				</div>
-				<div class="col-xs-2 chester">
-					<a href="#" class="chester-logo">Разработка  ChesterStudio</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="js/min/jquery-3.0.0-min.js"></script>
-	<script src="js/min/jquery.fancybox-min.js"></script>
-	<script src="js/min/slick-min.js"></script>
-	<script src="js/min/script-min.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
