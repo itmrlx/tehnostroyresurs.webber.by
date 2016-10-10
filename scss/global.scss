@@ -64,3 +64,24 @@
 		}
 	}
 }
+
+// content
+.content{
+	ul{
+		list-style: none;
+		li{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				top: 50%;
+				background: $brand-primary;
+				border-radius: 50%;
+				margin-top: -3px;
+				left: -15px;
+			}
+		}
+	}
+}
