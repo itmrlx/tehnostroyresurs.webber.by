@@ -7,7 +7,7 @@ jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it 
   })
 }
 var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) }); // Find .post>a>img and create fancybox image gallery
-var posts = jQuery(".item-images"); //find post
+var posts = jQuery(".content"); //find post
 posts.each(function() {
   jQuery(this).find(thumbnails).addClass("fancybox").attr("rel","fancybox"+posts.index(this)).getTitle()
 });
