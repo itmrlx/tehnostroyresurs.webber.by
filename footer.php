@@ -27,9 +27,9 @@
 		</div>
 	</div>
 
-	<script src="js/min/jquery-3.0.0-min.js"></script>
-	<script src="js/min/jquery.fancybox-min.js"></script>
-	<script src="js/min/slick-min.js"></script>
-	<script src="js/min/script-min.js"></script>
+	<script src="js/min/jquery-3.0.0-dist.js"></script>
+	<script src="js/min/jquery.fancybox-dist.js"></script>
+	<script src="js/min/slick-dist.js"></script>
+	<script src="js/min/script-dist.js"></script>
 </body>
 </html>
