@@ -5,10 +5,10 @@
 			<div class="row">
 				<div class="col-xs-12 purple-menu-container">
 					<ul class="purple-menu">
-						<li class="current-menu-item"><a href="#">О КОМПАНИИ</a></li>
+						<li><a href="#">О КОМПАНИИ</a></li>
 						<li><a href="#">ИСТОРИЯ</a></li>
 						<li><a href="#">СОТРУДНИКИ</a></li>
-						<li><a href="#">ОТЗЫВЫ</a></li>
+						<li class="current-menu-item"><a href="#">ОТЗЫВЫ</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 description">
