@@ -47,19 +47,19 @@
 		</div>
 		<div class="row icons">
 			<div class="col-xs-3 icon">
-				<img src="img/about-icon-1.png" alt="опыт">
+				<img src="img/about-icon-1.svg" alt="опыт">
 				<div class="text">20-летний опыт на рынке строительных услуг Беларуси</div>
 			</div>
 			<div class="col-xs-3 icon">
-				<img src="img/about-icon-2.png" alt="без привлечения подрядчиков">
+				<img src="img/about-icon-2.svg" alt="без привлечения подрядчиков">
 				<div class="text">Выполняем до 70% строительства объекта без привлечения подрядчиков</div>
 			</div>
 			<div class="col-xs-3 icon">
-				<img src="img/about-icon-3.png" alt="более 150 объектов">
+				<img src="img/about-icon-3.svg" alt="более 150 объектов">
 				<div class="text">Спроектировано и введено в эксплуатацию более 150-и объектов</div>
 			</div>
 			<div class="col-xs-3 icon">
-				<img src="img/about-icon-4.png" alt="профессионалы">
+				<img src="img/about-icon-4.svg" alt="профессионалы">
 				<div class="text">300 профессионалов высокой квалификации в штате</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 
 	<!-- last news -->
 	<div class="wrapper last-news">
-		<div class="container">
+		<div class="container review-container">
 			<!-- review -->
 			<div class="review-block">
 				<div class="row">

@@ -18,9 +18,17 @@
 	<div class="container header-top">
 		<div class="row">
 			<div class="col-xs-3 logo-container">
-				<a href="/"><img src="img/logo.png" alt="Техностройресурс Плюс"></a>
+				<a href="/">
+					<img src="img/logo.png" alt="Техностройресурс Плюс" class="big">
+					<img src="img/logo-small.png" alt="Техностройресурс Плюс" class="small">
+				</a>
 			</div>
 			<div class="col-xs-7 menu-container">
+				<div class="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul class="pro-menu">
 					<li><a href="#">О КОМПАНИИ</a></li>
 					<li><a href="#">УСЛУГИ</a></li>
@@ -28,6 +36,7 @@
 					<li><a href="#">НОВОСТИ</a></li>
 					<li><a href="#">КОНТАКТЫ</a></li>
 				</ul>
+				<div class="clearfix"></div>
 			</div>
 			<div class="col-xs-2 phone-container">
 				<a href="tel:+375290000000">+375 29 <span>000-00-00</span></a>

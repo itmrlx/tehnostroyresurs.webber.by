@@ -36,5 +36,19 @@ $('.partners-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 7000
+  autoplaySpeed: 7000,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+
+// burger menu
+$('.burger-menu').click(function () {
+  $(this).toggleClass('active');
+  $('.pro-menu').slideToggle();
 });

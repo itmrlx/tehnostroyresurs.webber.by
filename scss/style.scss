@@ -3,16 +3,105 @@
 // header top
 .header-top{
 	line-height: 80px;
-	.logo-container{}
+	.logo-container{
+		@media (max-width: 767px) {
+			width: 25%;
+		}
+		.small{
+			display: none;
+		}
+		@media (max-width: 767px) {
+			.big{
+				display: none;
+			}
+			.small{
+				display: inline-block;
+			}
+		}
+	}
 	.menu-container{
+		@media (max-width: 767px) {
+			width: 100%;
+			position: absolute;
+			z-index: 99;
+			background: #fff;
+			top: 80px;
+		}
+		.burger-menu{
+			display: none;
+			position: relative;
+			float: right;
+			right: 0px;
+			top: 25px;
+			width: 50px;
+			height: 80px;
+			cursor: pointer;
+			margin-top: -80px;
+			span{
+				position: absolute;
+				width: 50px;
+				height: 4px;
+				background: #434343;
+				border-radius: 4px;
+				top: 0;
+				right: 0;
+				transition: all .3s;
+				&:nth-child(2){
+					top: 15px;
+				}
+				&:nth-child(3){
+					top: 30px;
+				}
+			}
+			&.active{
+				span{
+					&:nth-child(1){
+						transform: rotate(45deg);
+						top: 20px;
+					}
+					&:nth-child(2){
+						right: 50%;
+						width: 0;
+					}
+					&:nth-child(3){
+						transform: rotate(-45deg);
+						top: 20px;
+					}
+				}
+			}
+			@media screen and (max-width: 767px){
+				display: block;
+			}
+		}
 		.pro-menu{
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			@media (max-width: 767px) {
+				width: 100%;
+				z-index: 99;
+				background: #fff;
+				padding: 15px 0;
+				float: none;
+				display: none;
+				border-bottom: 1px solid #ccc;
+			}
 			li{
 				display: block;
 				float: left;
 				margin: 0 15px;
+				@media (max-width: 1199px) {
+					margin: 0 8px;
+				}
+				@media (max-width: 991px) {
+					margin: 04px;
+				}
+				@media (max-width: 767px) {
+					background: #fff;
+					width: 100%;
+					text-align: center;
+					float: none;
+				}
 				&:hover,
 				&.current-menu-item{
 					a{
@@ -33,6 +122,21 @@
 					text-decoration: none;
 					position: relative;
 					transition: all .3s;
+					@media (max-width: 1199px) {
+						font-size: 14px;
+					}
+					@media (max-width: 991px) {
+						font-size: 12px;
+						font-weight: normal;
+					}
+					@media (max-width: 767px) {
+						width: 100%;
+						text-align: center;
+						line-height: 35px;
+						float: none;
+						font-size: 15px;
+						font-weight: 600;
+					}
 					&:after{
 						content: '';
 						position: absolute;
@@ -42,6 +146,9 @@
 						bottom: 23px;
 						left: 50%;
 						transition: all .3s;
+						@media (max-width: 767px) {
+							display: none;
+						}
 					}
 				}
 			}
@@ -49,6 +156,11 @@
 	}
 	.phone-container{
 		padding-left: 0;
+		@media (max-width: 767px) {
+			width: 50%;
+			padding-right: 0;
+			text-align: center;
+		}
 		a{
 			font-size: 15px;
 			font-weight: 400;
@@ -58,6 +170,23 @@
 			display: block;
 			text-decoration: none;
 			transition: all .3s;
+			@media (max-width: 1199px) {
+				font-size: 13px;
+				padding-left: 30px;
+				background-size: 25px auto;
+			}
+			@media (max-width: 991px) {
+				font-size: 12px;
+				padding-left: 0px;
+				background: none;
+			}
+			@media (max-width: 767px) {
+				padding-left: 25px;
+				font-size: 13px;
+				background: url(../img/phone-icon.png) 0 50% no-repeat;
+				background-size: 20px auto;
+				display: inline-block;
+			}
 			&:hover{
 				color: $brand-primary;
 			}
@@ -78,6 +207,10 @@
 		background-repeat: no-repeat;
 		position: relative;
 		min-height: 410px;
+		@media (max-width: 767px) {
+			min-height: 0;
+			height: auto;
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -87,6 +220,9 @@
 			left: 0;
 			background: rgba(#000,.7);
 			z-index: 1;
+			@media (max-width: 991px) {
+				width: 100%;
+			}
 		}
 		.container{
 			position: relative;
@@ -94,17 +230,41 @@
 			transform: translateY(-50%);
 			color: #fff;
 			z-index: 2;
+			@media (max-width: 767px) {
+				top: 0;
+				transform: translateY(0);
+				padding: 30px 15px;
+			}
+			.col-xs-5{
+				@media (max-width: 991px) {
+					width: 100%;
+				}
+			}
 			.title{
 				font-size: 53px;
 				font-weight: 300;
 				line-height: 55px;
 				margin-bottom: 20px;
+				@media (max-width: 1199px) {
+					font-size: 43px;
+					line-height: 46px;
+				}
+				@media (max-width: 767px) {
+					font-size: 28px;
+					line-height: 32px;
+				}
 			}
 			.desc{
 				font-size: 15px;
 				font-weight: 400;
 				line-height: 20px;
 				margin-bottom: 100px;
+				@media (max-width: 1199px) {
+					margin-bottom: 50px;
+				}
+				@media (max-width: 767px) {
+					margin-bottom: 30px;
+				}
 			}
 		}
 	}
@@ -120,6 +280,10 @@
 		position: absolute;
 		top: 0;
 		z-index: 2;
+		@media (max-width: 767px) {
+			display: none;
+			visibility: hidden;
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -146,6 +310,9 @@
 		&.slick-next{
 			right: 0;
 			background: rgba(#000,.7);
+			@media (max-width: 991px) {
+				background: none;
+			}
 			&:after{
 				transform: rotate(135deg);
 				right: 23px;
@@ -157,11 +324,35 @@
 // about
 .about{
 	margin-bottom: 250px;
+	@media (max-width: 991px) {
+		margin-bottom: 200px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 160px;
+	}
+	.col-xs-9,
+	.col-xs-3{
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
 	.title{
 		margin: 0;
 		font-size: 55px;
 		font-weight: 300;
 		line-height: 30px;
+		@media (max-width: 991px) {
+			font-size: 40px;
+		}
+		@media (max-width: 767px) {
+			font-size: 28px;
+			line-height: 32px;
+			margin-bottom: 15px;
+		}
+	}
+	.btn{
+		display: block;
+		margin: 0 auto;
 	}
 	.desc{
 		margin-top: 55px;
@@ -170,6 +361,10 @@
 		font-weight: 400;
 		line-height: 23px;
 		color: #575757;
+		@media (max-width: 767px) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 	}
 	.icons{
 		.icon{
@@ -180,6 +375,18 @@
 			color: #000;
 			line-height: 19px;
 			min-height: 19px*3;
+			@media (max-width: 1199px) {
+				font-size: 13px;
+			}
+			@media (max-width: 991px) {
+				width: 50%;
+				margin-bottom: 15px;
+			}
+			@media (max-width: 767px) {
+				width: 100%;
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
 			img{
 				position: absolute;
 				top: 50%;
@@ -201,6 +408,11 @@
 		border-radius: 4px 0 0 4px;
 		padding: 30px;
 		text-align: center;
+		@media (max-width: 991px) {
+			width: 100%;
+			padding: 30px 15px;
+			border-radius: 0;
+		}
 		.title{
 			font-size: 20px;
 			color: #fff;
@@ -208,8 +420,26 @@
 			margin-bottom: 45px;
 			text-transform: uppercase;
 			text-align: left;
+			@media (max-width: 1199px) {
+				font-size: 17px;
+			}
+			@media (max-width: 991px) {
+				float: left;
+				line-height: 37px;
+				margin-bottom: 0;
+			}
+			@media (max-width: 767px) {
+				font-size: 13px;
+			}
 		}
 		.btn-transparent{
+			@media (max-width: 1199px) {
+				padding: 7px;
+			}
+			@media (max-width: 991px) {
+				float: right;
+				padding: 7px 14px;
+			}
 			&:hover{
 				background: #fff;
 				color: $brand-primary;
@@ -219,10 +449,20 @@
 	.white{
 		background: #fff;
 		border-radius: 0 4px 4px 0;
+		@media (max-width: 991px) {
+			width: 100%;
+			border-radius: 0;
+		}
 	}
 	.center{
 		padding: 30px 15px 30px 70px;
 		background: #fff;
+		@media (max-width: 991px) {
+			padding: 30px 15px;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 		.title{
 			margin: 0;
 			font-weight: 300;
@@ -243,6 +483,9 @@
 	.right{
 		padding: 35px 15px;
 		text-align: center;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 		a{
 			display: inline-block;
 			position: relative;
@@ -294,6 +537,14 @@
 	background-size: cover;
 	background-position: 50% 0;
 	padding: 30px 0;
+	.review-container{
+		@media (max-width: 767px) {
+			padding: 0;
+			>.row{
+				margin: 0;
+			}
+		}
+	}
 	.review-block{
 		margin-top: -134px;
 		margin-bottom: 75px;
@@ -304,14 +555,25 @@
 		font-weight: 600;
 		color: #fff;
 		margin-bottom: 20px;
+		@media (max-width: 767px) {
+			padding: 0 15px;
+		}
 	}
 }
 .news{
+	.col-xs-4{
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+	}
 	.news-item{
 		padding: 15px;
 		text-align: center;
 		color: #fff;
 		margin-bottom: 30px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
 		.date{
 			font-size: 12px;
 			margin-top: 15px;
@@ -357,6 +619,7 @@
 		.slide{
 			height: 85px;
 			position: relative;
+			padding: 10px;
 			img{
 				display: block;
 				margin: 0 auto;
@@ -416,8 +679,19 @@
 .footer-b{
 	background: #434343;
 	color: #fff;
+	.col-xs-3,
+	.col-xs-4,
+	.col-xs-2{
+		@media (max-width: 991px) {
+			width: 50%;
+		}
+	}
 	.socials{
 		margin-top: 30px;
+		@media (max-width: 767px) {
+			width: 100%;
+			text-align: center;
+		}
 		.logo{
 			text-transform: uppercase;
 			color: #fff;
@@ -434,6 +708,9 @@
 			margin-top: 15px;
 			&.vk{
 				margin-left: 50px;
+				@media (max-width: 767px) {
+					margin-left: 5px;
+				}
 			}
 			&.vk{background-image: url(../img/vk.png);}
 			&.fb{background-image: url(../img/facebook.png);}
@@ -451,12 +728,19 @@
 		font-size: 13px;
 		font-weight: 300;
 		margin-top: 30px;
+		@media (max-width: 767px) {
+			width: 100%;
+			text-align: center;
+		}
 		p{
 			margin-bottom: 20px;
 		}
 	}
 	.contacts{
 		margin-top: 30px;
+		@media (max-width: 767px) {
+			margin-top: 15px;
+		}
 		a,p{
 			display: block;
 			color: #fff;
@@ -477,6 +761,12 @@
 			padding-top: 120px;
 			padding-bottom: 20px;
 			text-decoration: none;
+			@media (max-width: 1199px) {
+				background-size: 100px auto;
+			}
+			@media (max-width: 767px) {
+				background-size: 120px auto;
+			}
 			&:hover{
 				background-color: #d1050c;
 				background-image: url(../img/chester-h.png);
