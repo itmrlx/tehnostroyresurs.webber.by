@@ -1442,7 +1442,8 @@ a.service-item{
 		border: 1px solid #434343;
 		box-shadow: none;
 		padding: 11px 12px;
-		&:focus{
+		&:focus,
+		&.notempty{
 			+label{
 				display: none;
 			}

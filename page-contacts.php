@@ -50,7 +50,7 @@ template name: Контакты
 			<div class="row">
 				<div class="col-xs-3">
 					<div class="form-group">
-						<input class="form-control" id="tel" name="tel" type="tel" required />
+						<input class="form-control" id="tel" name="tel" type="tel" value="" required />
 						<label for="tel">Телефон<span>*</span></label>
 					</div>
 					<div class="form-group">
@@ -71,7 +71,7 @@ template name: Контакты
 				<div class="col-xs-6">
 					<div class="form-group for-robots" style="display: none;">
 						<input class="form-control" type="text" name="email" />
-						<input class="form-control modal-form-value" type="text" name="title" />
+						<input class="form-control modal-form-value" type="text" name="title" value="Страница - Контакты" />
 					</div>
 					<div class="form-group">
 						<textarea class="form-control" name="comment" id="mes" cols="30" rows="4" required></textarea>

@@ -81,3 +81,11 @@ function fform(title, value) {
   $('.modal-form-title').html(title);
   $('.modal-form-value').val(value);
 }
+
+$('.form-control').blur(function () {
+  if(!$(this).val()){
+    $(this).addClass('empty');
+  }else if($(this).val()){
+    $(this).addClass('notempty');
+  }
+});
