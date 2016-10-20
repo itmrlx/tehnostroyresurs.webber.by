@@ -20,8 +20,8 @@
 			<div class="row">
 				<div class="col-xs-3 logo-container">
 					<a href="/">
-						<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Техностройресурс Плюс" class="big">
-						<img src="<?php bloginfo('template_url'); ?>/img/logo-small.png" alt="Техностройресурс Плюс" class="small">
+						<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Техностройресурс Плюс" class="big">
+						<img src="<?php bloginfo('template_url'); ?>/img/logo-small.svg" alt="Техностройресурс Плюс" class="small">
 					</a>
 				</div>
 				<div class="col-xs-7 menu-container">
